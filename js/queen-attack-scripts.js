@@ -1,8 +1,6 @@
 var queenAttack = function(queenPosition, pawnPosition) {
 
-  if ((queenPosition[0] === pawnPosition[0]) || (queenPosition[1] === pawnPosition[1])) {
-    return true;
-  } else if (Math.abs(queenPosition[0] - pawnPosition[0]) === Math.abs(queenPosition[1] - pawnPosition[1])) {
+  if ((queenPosition[0] === pawnPosition[0]) || (queenPosition[1] === pawnPosition[1]) || (Math.abs(queenPosition[0] - pawnPosition[0]) === Math.abs(queenPosition[1] - pawnPosition[1]))) {
     return true;
   }  else {
     return false;
